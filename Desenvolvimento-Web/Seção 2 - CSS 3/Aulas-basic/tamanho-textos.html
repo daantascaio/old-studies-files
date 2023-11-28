@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tamanho de textos</title>
+
+    <style type="text/css">
+        /*
+        px -> tamanho fixo
+        % -> tamanho relativo (100% equivale ao tamanho padrão do browser, normalmente 16px
+        em -> tamanho relativo ao container pai
+        */
+        div {
+            font-size: 16px;
+        }
+        .texto{
+            font-size: 2em; /* como o código está dentro da div, a div é 
+                               o container pai sendo assim, 2em equivalo
+                               a 2x 16px = 32px essa lógica equivale
+                               para qualquer cotainer pai
+                               */
+        }
+    </style>
+</head>
+<body>
+    <div>
+    <p class="texto">Conteúdo</p>
+    <p>Conteúdo 2</p>
+    </div>
+</body>
+</html>

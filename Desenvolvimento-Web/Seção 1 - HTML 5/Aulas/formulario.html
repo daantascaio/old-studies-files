@@ -1,0 +1,67 @@
+<!doctype html>
+
+<html>
+
+ <head>
+     <title> Formulários </title>
+     <meta charset="utf-8">
+ </head>
+
+  <body>
+      <!-- Aqui estou dando um título para a página-->
+    <h2>Login</h2>
+      <!-- com o code <form> </form>, podemos começar a editar nosso formulário-->
+    <form>
+        <!-- Esse login, irá aparecer encima da nossa caixa de texto(tipo um título)-->
+        Login:<br>
+        <!-- O <input> é o comando que usamos para fazer com que o usuário INSIRA dados
+             com o  'type="" ' definimos o tipo de dados que estamos pedindo-->
+        <input type="text" name="login"><br>
+      
+        Senha:<br>
+        <input type="password" name="senha"><br>
+
+        <input type="button" value="Logar">
+        <!-- text = texto, o usuário vai digitar seu email ou seu usuário de login
+             password = senha, o input vai atribuir coringas para esconder a senha do usuário
+             submit = enviar, um botão que ao ser clicado envia os dados-->
+
+      
+
+      <h2>Cadastre-se</h2>
+      Login:<br>
+      <input type="text" name="" id=""><br><br>
+      
+      
+      Sexo:<br>
+      <input type="radio" name="sexo" value="M" id="">Masculino
+      <input type="radio" name="sexo" value="F"id="">Feminino
+      <input type="radio" name="sexo" value="O"id="">Outro<br><br>
+
+      Interesses:<br>
+      <input type="checkbox" name="" id="">Futebol<br>
+      <input type="checkbox" name="" id="">Cursos<br>
+      <input type="checkbox" name="" id="">Paisagem<br><br>
+
+      Estado:<br>
+      <select name="estado" id="">
+          <!-- utilizando a tag name="" e dando um nome e a tag value="" e
+               também colocando um valor, por meio da programação vc 
+               consegue identificar qual opção o usuário colocou.-->
+          <option value="sp">SP</option>
+          <option value="sc">SC</option>
+          <option value="rj">RJ</option>
+          <option value="rs">RS</option>
+          <option value="mg">MG</option>
+          <option value="am">AM</option>
+      </select><br><br>
+
+      Observações:<br>
+      <textarea name="" id="" cols="30" rows="10"></textarea><br>
+      
+      <input type="submit" value="Cadastrar">
+    
+    </form>
+  </body>
+
+</html>

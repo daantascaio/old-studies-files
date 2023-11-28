@@ -1,0 +1,212 @@
+/*Estrutua do site
+*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Helvetica, Arial, sans-serif, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(../imagens/bg.png);
+    margin: 15px;
+}
+
+#container{
+   background: #ede9cc url(../imagens/bg-container.png) top center repeat-y;
+   margin: 0 auto;
+   min-width: 740px;
+   max-width: 1180px;
+
+}
+
+#topo{
+    position: relative;
+    background: #dbcd87;
+    height: 15.4em;
+    min-height: 250px;
+}
+
+#area-logo{
+    position: absolute;
+    background: url(../imagens/topo-imagem-principal.png) no-repeat;
+    width: 100%;
+    height: 250px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.logo a{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    z-index: 3;
+    background: url(../imagens/logo.png) no-repeat ;
+    width: 151px;
+    height: 66px;
+    text-indent: -9000px;
+}
+
+#area-menu{
+    position: absolute;
+    background: url(../imagens/topo-imagem-lateral.png);
+    width: 450px;
+    height: 250px;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    
+}
+
+#conteudo-menu{
+    margin-left: 90px;
+    margin-right: 15px;
+    padding-top: 15px;
+    border: 1px solid red;
+}
+
+#menu-locais{
+    border-bottom: 1px solid #b5ab56;                  /* border-top: 1px solid #746c40;*/
+    border-top: 1px solid #b5ab56;                     /* border-bottom: 1px solid #746c40;   MANEIRA QUE EU FIZ SOZINHO*/
+    padding-top: 5px;                                    /* padding: 10px 10px 10px 0px;*/
+    padding-bottom: 5px;                                 /* font-size: 0.8em;*/           
+    font-size: 0.7em;                                    /* color:#8c8455;*/             
+    color: #8b8448;                                                   
+                                                       
+    
+
+}
+
+#menu-locais .locais{
+    float: left;
+    line-height: 2.1em;
+}
+
+a{
+    text-decoration: none;
+
+}
+a.reserva{
+    text-transform: uppercase;                    /* background: #8f8342;*/
+    background: #a29750;                        /* color: white;*/   
+    color: #fff5b0;                             /* list-style: none;*/
+    padding: 5px 10px;                            /* font-weight: bold;*/
+    float: right;                                 /* padding: 2px;                       MANEIRA QUE EU FIZ SOZINHO*/              
+                                                  /* font-size: 0.9em;*/    
+                                                  /* margin-left: 15px;*/    
+                                                  /* margin-right: 0px;*/   
+                                                  /* text-decoration: none;*/
+}
+
+/*Barra de navegação vertical
+*/
+
+#menu{
+    margin-top: 15px;
+
+}
+
+ul{
+    list-style: none;
+
+}
+
+ul#navegacao{
+    float: left;
+
+}
+
+ul#navegacao a{
+    text-transform: uppercase;
+    font-size: 0.8em;
+    padding: 5px;
+    color: #6e672c;
+    line-height: 30px;
+}
+ul#navegacao a:hover{
+    background: #fdf6be;
+}
+
+.depoimento{
+    width: 226px;
+    height: 164px;
+    float: right;
+}
+
+
+/*
+ul{
+    list-style: none;
+
+}
+
+ul li{
+    margin-top: 3px;
+    padding: 7px;
+}
+
+ul a{
+    font-size: 0.9em;
+    color: #5a5328;
+}
+
+ul a:hover{
+    background: rgb(240, 237, 198);
+    padding: 5px;
+}
+
+#menu-listado{
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#imagem-logo{
+    background: url(../imagens/depoimento.png) no-repeat left bottom;
+    height: 50px;
+    width: 50px;
+    border: solid 1px red;
+    
+    
+}
+*/
+
+/* Área de conteúdos
+*/
+
+#area-principal{
+    float: left;
+    width: 50%;
+    background: url(../imagens/bg-area-principal.png) top left repeat-x;
+    padding: 15px 0px;
+}
+
+#area-lateral{
+    float: right;
+    width: 50%;
+    background: url(../imagens/bg-area-lateral.png) top left repeat-x;
+    padding: 20px 0px;  
+}
+
+.conteudo{
+    margin: 0 auto;
+    width: 90%;
+}
+
+/*rodape
+*/
+
+#rodape{
+    clear: both;
+}
+
+
+
+
+
+
+
+
+
+                                                  
+

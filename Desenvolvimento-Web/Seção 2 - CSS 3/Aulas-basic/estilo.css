@@ -1,0 +1,12 @@
+.texto{
+    color: white;
+    background: orange;
+    font-size: large;
+}
+
+/*
+Esse arquivo demonstra o uso de CSS externo.
+os arquivos pagina1 e pagina2 estão sendo
+modificados por este arquivo, o que facilita
+a continuidade de atualizações do site
+*/

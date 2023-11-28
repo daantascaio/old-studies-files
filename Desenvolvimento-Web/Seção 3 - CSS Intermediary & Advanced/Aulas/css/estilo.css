@@ -1,0 +1,367 @@
+/************************************
+Seletor universal
+******
+*{
+    border: 1px solid blue;
+}
+/******
+Seletor de texto
+******
+h1{
+    color: green;
+}
+/******
+Seletor de classe
+******
+.verde{
+    color: green;
+}
+/******
+Seletor de classe QUE SÓ FUNCIONA NA TAG P(NESSE CASO)
+
+p.verde{
+    color: green;
+}
+******/
+/******
+Seletor de ID
+******
+#cabecalho{
+    border: 10px solid black;
+    background: rgb(154, 146, 146);
+    color: rgb(115, 115, 239);
+}
+/******
+Seletor de filho, a logica se aplica com qualquer tag que se relaciona(PAI e FILHO)
+******
+li>a{
+    color: red;
+    text-decoration: none;
+    background: #f456f4;
+}
+/******
+Seletor de Descendente
+******
+p a{
+    color: #f456f4;
+    background: #123;
+    
+}
+/******
+Seletor de irmão adjacente
+******
+h1+p{
+    color: red;
+}
+
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+FIM DO ARQUIVO --seletores.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+heranca-especificidade.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*************************************
+*{
+    border: 1px solid red;
+}
+body{
+    color: red;
+    font-size: 14px;
+    border: 5px solid blue;
+}
+
+.pagina{
+    color: blue;
+    font-size: 20px;   
+}
+
+
+Nesse exemplo, temos dois estilos
+sendo aplicados no P, conforme a sequência o
+valor que o conteudo dentro do P vai ter é o red(segundo P), pois foi
+o ultimo valor definido
+
+Mas se usarmos o comando !important, não irá mais importar essa sequencia, onde o
+!important estiver aquele estilo será aplicado
+
+p{
+    color: blue !important;
+}
+
+p{
+    color: red;
+}
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+FIM DO ARQUIVO --heranca-especificidade.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+navegacao-vertical.html e index.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+ul{
+    
+    list-style-type: none; /*Define o tipo da lista
+    margin: 0;
+    padding: 0;
+    
+}
+
+li{
+    padding: 5px 20px;
+    background: url(../imagens/seta.png) no-repeat left center;
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+ul a{
+    width: 200px;
+    height: 40px;
+    display: block;
+    color: #000;
+    text-decoration: none;
+    text-indent: 40px;
+    line-height: 40px;
+    background: #f7b600 url(../imagens/menu.png) no-repeat;
+}
+
+ul a:hover{
+   background-position: right bottom;
+   background-color: #f99200;
+   color: #fff;
+}
+
+#home #navegacao-lateral .home a{
+    background-position: right bottom;
+    background-color: #f99200;
+    color: #fff;
+}
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+FIM DO ARQUIVO --navegacao-vertical.html e index.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+navegacao-horizontal.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+ul#navegacao-horizontal{
+    
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    background: #159cb0 url(../imagens/fundo-horizontal.png) repeat-x;
+    float: left;
+}
+
+ul li{
+    float: left;
+
+}
+
+ul a{
+    text-decoration: none;
+    display: block;
+    padding: 0 2em;
+    line-height: 2em;
+    color: #fff;
+    background: url(../imagens/divisor.png) repeat-y;
+}
+
+ul .primeiro a{
+    background: none;
+}
+
+ul a:hover{
+    color: #085662;
+    background: #44cade;
+}
+
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+FIM DO ARQUIVO --navegacao-horizontal.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+navegacao-abas.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+body{
+    font-family: "Thebuchet MS", Helvetica, sans-serif;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 720px;
+    
+}
+
+ul li{
+    float: left;
+    background: url(../imagens/aba-direita.png) no-repeat top right;
+}
+
+li a{
+    display: block;
+    padding: 0 2em;
+    line-height: 3em;
+    text-decoration: none;
+    background: url(../imagens/aba-esquerda.png) no-repeat top left;
+    color: white;
+}
+
+ul a:hover{
+    color: #894a1f;
+}
+
+ul #atual{
+    background: url(../imagens/aba-direita-atual.png);
+}
+
+ul #atual a{
+    background: url(../imagens/aba-esquerda-atual.png) no-repeat top left;
+}
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+
+FIM DO ARQUIVO --navegacao-abas.html
+
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

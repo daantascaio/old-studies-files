@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Elementos Flutuantes na Prática</title>
+
+        <style type="text/css">
+
+            body {
+                background: #f4f4f4;
+                
+                
+            }
+
+            #principal {
+                width: 920px;
+            
+            }
+
+            .noticia {
+                background: #e5e5e5;
+                padding: 5px;
+                width: 280px;
+                margin: 7px;
+                float: left;
+            }
+
+            .clear {
+                clear: both;
+            }
+
+            .imagem-galeria {
+                background: #e5e5e5;
+                color: rgb(0, 0, 0);
+                width: 265px;
+                padding: 5px;
+                margin: 15px;
+                float: left;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 
+            Inicio do exemplo de elementos flutuantes na prática.
+            
+            Nesse exemplo, estamos simulando um site de notícias
+
+        -->
+        <div id="principal"><!-- div inicial -->
+
+         <div> <!-- Inicio div noticia-->
+
+            <div class="noticia">
+                <h2>Lorem ipsum dolor sit amet 1</h2>
+                <p> Lorem ipsum dolor sit amet. Id totam eaque ut architecto sequi eos
+                    distinctio obcaecati aut fuga laboriosam 33 veniam voluptas quo 
+                    error commodi.</p>
+                    <a href="">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem ipsum dolor sit amet 2</h2>
+                <p> Lorem ipsum dolor sit amet. Id totam eaque ut architecto sequi eos
+                    distinctio obcaecati aut fuga laboriosam 33 veniam voluptas quo 
+                    error commodi.</p>
+                    <a href="">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem ipsum dolor sit amet 3</h2>
+                <p> Lorem ipsum dolor sit amet. Id totam eaque ut architecto sequi eos
+                    distinctio obcaecati aut fuga laboriosam 33 veniam voluptas quo 
+                    error commodi.</p>
+                    <a href="">Veja mais</a>
+            </div>
+         </div> <!-- Fim div noticia -->
+
+         <div class="clear"> </div>
+
+            <div><!-- Inicio div fotos-->
+
+                <div  class="imagem-galeria">
+
+                    <img src="imagens/imagem1.png" alt="">
+                    <p>Resumo</p>
+                </div>
+
+                <div  class="imagem-galeria">
+
+                    <img src="imagens/imagem2.png" alt="">
+                    <p>Resumo</p>
+                </div>
+
+                <div  class="imagem-galeria">
+
+                    <img src="imagens/imagem3.png" alt="">
+                    <p>Resumo</p>
+                </div>
+
+                <div  class="imagem-galeria">
+
+                    <img src="imagens/imagem4.png" alt="">
+                    <p>Resumo</p>
+                </div>
+
+                <div  class="imagem-galeria">
+
+                    <img src="imagens/imagem5.png" alt="">
+                    <p>Resumo</p>
+                </div>
+                
+            </div><!-- Fim div fotos -->
+
+        </div> <!-- fim da div inicial -->
+            
+        <!--
+            Fim de exemplo
+        -->
+
+    </body>
+</html>

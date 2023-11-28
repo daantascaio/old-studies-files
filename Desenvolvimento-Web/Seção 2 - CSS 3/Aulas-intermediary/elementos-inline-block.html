@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <title>Elementos inline - block - inline-block</title>
+
+        <style type="text/css">
+
+            h1{
+                border: 1px solid red;
+            }
+
+            .borda{
+                border: 1px solid red;
+            }
+
+            .display-inline{
+                display: inline;
+                border: 1px solid red;
+            }
+
+            .display-block{
+                display: block;
+                border: 1px solid red;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <!-- Repare que o elemento block não se ajusta ao conteúdo inserido na tag -->
+        <div class="borda">
+            Exemplo de elemento --block--
+        </div>
+        <h1>Exemplo de elemento --block--</h1>
+        <h1>Exemplo de elemento --block--</h1>
+
+        <!-- Agora usando o display, vamos alterar esse comportamento 
+             repare que o elemento se ajusta automaticamente para ocupar
+             todo espaço disponivel de acordo com o conteudo -->
+        <div class="display-inline" >
+            Exemplo de aplicação do display-inline
+        </div>
+        <h1 class="display-inline">Exemplo de aplicação do display-inline</h1>
+        <br><br><br><br>
+
+        <!-- Exemplos de elementos inline-->
+        <span class="borda">Exemplo de elemento --inline--</span>
+        <span class="borda">Exemplo de elemento --inline--</span>
+        
+        <!-- Agora utilizando o display vamos alterar o comportamento padrão
+             da tag do tipo inline -->
+        <span class="display-block">Exemplo de elemento com aplicação do display-block</span>
+        <span class="display-block">Exemplo de elemento com aplicação do display-block</span>
+
+            
+
+    </body>
+</html>

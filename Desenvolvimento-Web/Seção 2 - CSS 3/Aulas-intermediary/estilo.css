@@ -1,0 +1,46 @@
+/* 
+Modelo de caixa
+
+
+.conteudo {
+    border: 1px solid red;
+/*
+padding: (top 20px) (left 15px) (bottom 10px) (right 5px)
+ou seja, o primeiro valor é o top e o restante seguem a
+lógica do sentido horário (TOP - LEFT - BOTTOM - RIGHT)
+
+padding: (top e bottom 20px) (left e right 15px)
+o primeiro valor faz o espaçamento de >top e bottom<
+e o segundo valor faz o espaçamento de >left e right<
+
+padding-top: 20px; 
+padding-left: 20px;  
+padding-bottom: 20px; 
+padding-right: 100px;
+
+o --margin-- segue a mesma lógica do padding 
+(a diferença é que a
+
+    padding: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    width: 150px;
+}
+
+fim do exemplo 1
+*/
+
+#noticia {
+    background: rgb(19, 18, 18);
+    color: rgb(217, 212, 205);
+    padding: 10px;
+    border: 10px solid red;
+    margin: 20px;
+}
+
+h2 {
+    
+    margin: 20px;
+}
